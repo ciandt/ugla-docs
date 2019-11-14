@@ -1,0 +1,105 @@
+site_name: Ugla Style Guide
+site_description: O projeto Ugla foi desenvolvido com o objetivo de minimizar esforços no desenvolvimento FrontEnd de sistemas.
+site_author: Regivaldo Silva 
+site_url: https://ugla.dev
+
+repo_name: ciandt/ugla
+repo_url: https://github.com/ciandt/ugla
+edit_uri: ""
+
+theme:
+  name: 'material'
+  favicon: 'assets/images/favicon.ico'
+  language: en
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: 'assets/images/favicon.ico'
+  feature:
+    tabs: true
+
+nav:
+  - Getting started: 'index.md'
+  - Colaborando:
+    - Home: 'collaborate/index.md'
+  - Componentes: 
+    - Header: 
+        - Home: 'components/header/index.md'
+        - Brand: 'components/header/brand.md'
+        - People Card: 'components/header/peoplecard.md'
+    - Home: 'components/index.md'
+    - Button: 'components/button.md'
+    - Cards: 'components/cards.md'
+    - Checkbox: 'components/checkbox.md'
+    - Datepicker: 'components/datepicker.md'
+    - Field: 'components/field.md'
+    - File Upload: 'components/fileupload.md'
+    - Filter: 'components/filter.md'
+    - Form: 'components/form.md'
+    - List Links: 'components/listlinks.md'
+    - List Options: 'components/listoptions.md'
+    - Login: 'components/login.md'
+    - Pagination: 'components/pagination.md'
+    - Quote: 'components/quote.md'
+    - Select: 'components/select.md'
+    - Switch: 'components/switch.md'
+    - Tables: 'components/tables.md'
+    - Toolbar: 'components/toolbar.md'
+  - Diretivas:
+    - Home: 'directives/index.md'
+    - Grid: 'directives/grid.md'
+  - Serviços:
+    - Home: 'service/index.md'
+    - Modal: 'service/modal.md'
+    - Ugla Service: 'service/ugla-service.md'
+  - Models:
+    - Auth: 'models/auth.md'
+    - Checkbox Column Item: 'models/checkbox-column-item.md'
+    - Checkbox List Column: 'models/checkbox-list-column.md'
+    - Header: 'models/header.md'
+    - Link: 'models/link.md'
+    - List: 'models/list.md'
+    - Menu Item: 'models/menu-item.md'
+    - Menu: 'models/menu.md'
+    - Options: 'models/options.md'
+    - People: 'models/people.md'
+    - Select: 'models/select.md'
+    - Table Column: 'models/table-column.md'
+    - Table Header: 'models/table-header.md'
+    - Table Row: 'models/table-row.md'
+    - Table: 'models/table.md'
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - meta
+  - codehilite:
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/ciandt/ugla'
+    - type: 'link'
+      link: 'https://ugla.dev'
+  version: 1.0

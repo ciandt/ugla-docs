@@ -1,0 +1,48 @@
+name: Python application
+
+on:
+  push:
+    branches: 
+      - master
+      - stable
+
+jobs:
+  build:
+    name: build mkdocs
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: MKDocs
+      run: |
+        pip install mkdocs
+    - name: Mkdocs Material
+      run: |
+        pip install mkdocs-material
+    - name: Pymdown Extensions
+      run: |
+        pip install pymdown-extensions
+    - name: Pygments
+      run: |
+        pip install pygments
+    - name: Firebase setup
+      run: |
+        npm i firebase-tools -g
+    - name: Build docs
+      run: |
+        mkdocs build --verbose --clean --strict
+    - name: Deploy
+      run: |
+        firebase deploy --token $FIREBASE_TOKEN

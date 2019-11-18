@@ -1,5 +1,5 @@
 # Ugla Docs
 
-[https://github.com/{username}/{repo}/workflows/{workflowname}/badge.svg]
+![Build Status](https://github.com/ciandt/ugla-devs/workflows/Ugla+Documentation/badge.svg)
 
 Documentação da biblioteca [Ugla](https://www.npmjs.com/package/ugla).

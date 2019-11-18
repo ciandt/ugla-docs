@@ -5,7 +5,7 @@ site_url: https://ugla.dev
 
 repo_name: ciandt/ugla
 repo_url: https://github.com/ciandt/ugla
-edit_uri: ""
+edit_uri: ''
 
 google_analytics: ['UA-152823777-1', 'ugla.dev']
 

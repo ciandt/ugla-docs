@@ -18,7 +18,7 @@ logoutAction  | `function`                | Sim
 
 ```html
 <ugl-people-card
-  [people]="people"
-  [logoutText]="'Logout'"
-  (logoutAction)="logout()"></ugl-people-card>
+  [people]='people'
+  [logoutText]=''Logout''
+  (logoutAction)='logout()'></ugl-people-card>
 ```

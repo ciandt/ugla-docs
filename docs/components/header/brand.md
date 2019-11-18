@@ -16,6 +16,6 @@ brandImage    | `string`     | Sim
 
 ```html
 <ugl-brand
-    [brandName]="'Brand name'"
-    [brandImage]="'./assets/imgs/logo.png'"></ugl-brand>
+    [brandName]=''Brand name''
+    [brandImage]=''./assets/imgs/logo.png''></ugl-brand>
 ```

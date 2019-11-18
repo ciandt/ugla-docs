@@ -36,15 +36,15 @@ ngOnInit() {
 
 ## Exemplo completo
 
-```html tab="HTML"
+```html tab='HTML'
 <ugl-header
-    [header]="header"
-    (logoutAction)="logout($event)"
-    [logoutText]="'Logout now'">
+    [header]='header'
+    (logoutAction)='logout($event)'
+    [logoutText]=''Logout now''>
 </ugl-header>
 ```
 
-```typescript tab="TS"
+```typescript tab='TS'
 import { Header, People, Menu, MenuItem, Select, Options, UglaService } from 'ugla';
 
 @Component({

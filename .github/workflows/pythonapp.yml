@@ -1,4 +1,4 @@
-name: Ugla Documentation
+name: Documentation
 
 on:
   push:
@@ -13,28 +13,36 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
+    
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+    
     - name: MKDocs
       run: |
         pip install mkdocs
+    
     - name: Mkdocs Material
       run: |
         pip install mkdocs-material
+    
     - name: Pymdown Extensions
       run: |
         pip install pymdown-extensions
+    
     - name: Pygments
       run: |
         pip install pygments
+    
     - name: Build docs
       run: |
         mkdocs build --verbose --clean --strict
+    
     - name: Firebase GitHub Action
       uses: pizzafox/firebase-action@1.0.7
       env:
@@ -42,3 +50,9 @@ jobs:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       with:
         args: deploy
+    
+    - name: Webhook
+      uses: joelwmale/webhook-action@master
+      env:
+        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        data: "{'cards':[{'header':{'title':'Ugla','subtitle':'Documentation','imageUrl':'https://s3-sa-east-1.amazonaws.com/bts-it-public/jenkins-chat/like.png','imageStyle':'IMAGE'},'sections':[{'widgets':[{'buttons':[{'imageButton':{'iconUrl':'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png','onClick':{'openLink':{'url':'https://github.com/ciandt/ugla-docs'}}}},{'textButton':{'text':'Action','onClick':{'openLink':{'url':'https://github.com/ciandt/ugla-docs/actions'}}}},{'textButton':{'text':'Website','onClick':{'openLink':{'url':'https://ugla.dev'}}}}]}]}]}]}"

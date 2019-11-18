@@ -4,7 +4,7 @@ description: Conheceça e aprenda como implementar os componentes do Ugla
 # Componentes
 O Ugla foi desenvolvido pensando em componentização e, quando falamos em Angular, disponibilizamos [**Components**](https://angular.io/api/core/Component), [**Directives**](https://angular.io/api/core/Directive), [**Pipe**](https://angular.io/api/core/Pipe) e [**Serviços**](https://angular.io/api/core/Inject)
 
-* [Brand](brand)
+* [Brand](header/brand)
 * [Button](button)
 * [Cards](cards)
 * [Checkbox](checkbox)
@@ -18,7 +18,7 @@ O Ugla foi desenvolvido pensando em componentização e, quando falamos em Angul
 * [List Options](listoptions)
 * [Login](login)
 * [Pagination](pagination)
-* [People Card](peoplecard)
+* [People Card](header/peoplecard)
 * [Quote](quote)
 * [Select](select)
 * [Switch](switch)

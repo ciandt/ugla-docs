@@ -7,10 +7,12 @@ repo_name: ciandt/ugla
 repo_url: https://github.com/ciandt/ugla
 edit_uri: ""
 
+google_analytics: ['UA-152823777-1', 'ugla.dev']
+
 theme:
   name: 'material'
   favicon: 'assets/images/favicon.ico'
-  language: en
+  language: pt
   palette:
     primary: indigo
     accent: indigo

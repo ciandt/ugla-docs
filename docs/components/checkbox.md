@@ -2,3 +2,30 @@ title: Ugla | Componente Checkbox
 description: Conhecendo e implementando Checkbox
 
 # Checkbox
+[![header](checkbox.png)](checkbox.png)
+_Imagem do checkbox_
+
+## Atributos da tag
+
+Atributo      | Input/Output   | Tipo        | Obrigatório
+:------------ | :------------: | :---------- | -------------:
+mainText      | `@Input`       | `String`    | Não
+name          | `@Input`       | `String`    | Sim
+subText       | `@Input`       | `String`    | Não
+disabled      | `@Input`       | `Boolean`   | Sim
+isChecked     | `@Input`       | `Boolean`   | Sim
+checked       | `@Output`      | `function`  | Sim
+
+## Como usar
+
+```html tab='HTML'
+<ugl-checkbox
+    [mainText]="'Main Text'"
+    [name]="'list'"
+    [subtext]="'Sub Text'"
+    [disabled]="false"
+    [isChecked]="false"
+    [checked]="checked()"
+    ></ugl-checkbox>
+```
+

@@ -46,6 +46,7 @@ nav:
     - Login: 'components/login.md'
     - Pagination: 'components/pagination.md'
     - Quote: 'components/quote.md'
+    - Radio: 'components/radio.md'
     - Select: 'components/select.md'
     - Switch: 'components/switch.md'
     - Tables: 'components/tables.md'

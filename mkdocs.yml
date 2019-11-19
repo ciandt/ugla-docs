@@ -32,7 +32,6 @@ nav:
         - Home: 'components/header/index.md'
         - Brand: 'components/header/brand.md'
         - People Card: 'components/header/peoplecard.md'
-    - Home: 'components/index.md'
     - Button: 'components/button.md'
     - Cards: 'components/cards.md'
     - Checkbox: 'components/checkbox.md'

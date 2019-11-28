@@ -2,28 +2,34 @@ title: Ugla | Componente Login
 description: Conhecendo e implementando Login
 
 # Login
-
-[![Login](login-1.png)](login-1.png)
-
-[![Login](login-2.png)](login-2.png)
-
 O componente Login deve ser adicionado em uma pagina, e ele carrega os ítens necessários para realizar a autenticação.
 Existe dois tipo de autenticação: **Com formulário** e **Apenas com botão**.
 
+[![Login](login-1.png)](login-1.png)
+_Login sem Formulário_
+
+[![Login](login-2.png)](login-2.png)
+_Login com Formulário_
+
 ## Atributos da tag
 
-Atributo                | Input/Output   | Tipo        | Obrigatório
-:---------------------- | :------------: | :---------- | -------------:
-header                  | `@Input`       | `String`    | Sim
-subHeader               | `@Input`       | `String`    | Não
-buttonText              | `@Input`       | `String`    | Não
-desktopImage            | `@Input`       | `String`    | Não
-mobileImage             | `@Input`       | `String`    | Não
-floatLogo               | `@Input`       | `String`    | Não
-googleLogo              | `@Input`       | `String`    | Não
-buttonBackground        | `@Input`       | `String`    | Não
-hasForm                 | `@Input`       | `Boolean`   | Não
-signIn                  | `@Input`       | `String`    | Sim
+Atributo                | Input/Output   | Tipo        | Obrigatório    | Valor padrão
+:---------------------- | :------------: | :---------- | :------------- | :-------------: 
+header                  | `@Input`       | `String`    | Sim            | Header
+subHeader               | `@Input`       | `String`    | Não            | Subheader
+buttonText              | `@Input`       | `String`    | Não            | Button
+desktopImage            | `@Input`       | `String`    | Não            | -
+mobileImage             | `@Input`       | `String`    | Não            | -
+floatLogo               | `@Input`       | `String`    | Não            | - 
+googleLogo              | `@Input`       | `String`    | Não            | -
+buttonBackground        | `@Input`       | `String`    | Não            | red
+hasForm                 | `@Input`       | `Boolean`   | Não            | false
+fieldUser               | `@Input`       | `Boolean`   | Não            | User
+fieldPass               | `@Input`       | `Boolean`   | Não            | Password
+signIn                  | `@Input`       | `String`    | Sim            | -
+
+!!! info "Button Background"
+    As cores aceitas são: `red`, `aquamarine`, `gray`, `yellow`, `green` e `purple`
 
 ## Como usar
 

@@ -2,19 +2,18 @@ title: Ugla | Componente Header
 description: Conhecendo e implementando Header
 
 # Header
+O componente **Header** é composto por mais dois componentes: [Brand](brand), que é responsável pelo ícone e nome do sistema presentes na tela e [People Card](peoplecard), que carrega os dados do usuário logado e o botão de **Logout**.
 
 [![header](header.png)](header.png)
 _Imagem do header_
 
-O componente **Header** é composto por mais dois componentes: [Brand](brand), que é responsável pelo ícone e nome do sistema presentes na tela e [People Card](peoplecard), que carrega os dados do usuário logado e o botão de **Logout**.
-
 ## Atributos da tag
 
-Atributo      | Tipo                           | Obrigatório
-:------------ | :----------------------------- | -----------:
-header        | [Header](../../models/header)  | Sim
-logoutAction  | `function`                     | Sim
-logoutText    | `function`                     | Sim
+Atributo      | Input/Output   | Tipo                          | Obrigatório    | Valores padrões
+:------------ | :------------: | :---------------------------- | :------------- | :-------------
+header        | `@Input`       | [Header](../../models/header) | Sim            | -
+logoutText    | `@Input`       | `String`                      | Não            | Logout
+logoutAction  | `@Output`      | `function`                    | Sim            | -
 
 ## Class Header e subclasses
 

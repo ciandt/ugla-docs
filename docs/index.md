@@ -48,7 +48,7 @@ imports: [
 ],
 ```
 
-!!! info 'Themas'
+!!! info "Themas"
     Você pode escolher entre um dos temas que o Ugla possuí: **RED**, **YELLOW**, **AQUAMARINE**, **GREEN**, **GRAY** e **WHITE**.
 
 E, no arquivo `path/style.scss`:

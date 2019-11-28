@@ -3,7 +3,8 @@ description: Conhecendo e implementando Checkbox
 
 # Checkbox
 [![header](checkbox.png)](checkbox.png)
-_Imagem do checkbox_
+
+Gera um checkbox com título e texto auxiliar.
 
 ## Atributos da tag
 
@@ -29,3 +30,8 @@ checked       | `@Output`      | `function`  | Sim
     ></ugl-checkbox>
 ```
 
+```ts tab="TS"
+checked() {
+
+}
+```

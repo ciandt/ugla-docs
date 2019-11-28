@@ -13,11 +13,16 @@ items               | `@Input`       | [Options](../../models/options)`[]`  | N�
 radioGroupAriaLabel | `@Input`       | `String`                             | Sim
 itemChecked         | `@Output`      | `function`                           | Não
 
+!!! info "Arial Label"
+    O atributo `radioGroupAriaLabel` é usado melhorar a leitura do componente por leitores de tela.
+
 ## Como usar
 
 ```html tab='HTML'
 <ugl-radio
-    [items]="list"></ugl-radio>
+    [items]="list"
+    [radioGroupAriaLabel]="'Lista exemplo de radio'"
+    (itemChecked)="radioChecked($event)"></ugl-radio>
 ```
 
 ```typescript tab='TS'
@@ -27,4 +32,8 @@ list = [
   new Options('Teste 3', '3'),
   new Options('Teste 4', '4'),
 ];
+
+radioChecked(item: Options) {
+  console.log(`O item ${item.description} foi selecionado e seu valor é ${item.value}.`);
+}
 ```

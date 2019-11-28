@@ -33,7 +33,8 @@ nav:
         - Brand: 'components/header/brand.md'
         - People Card: 'components/header/peoplecard.md'
     - Button: 'components/button.md'
-    - Cards: 'components/cards.md'
+    - Cards: 
+      - Card Timeline: 'components/cards/card-timeline.md'
     - Checkbox: 'components/checkbox.md'
     - Datepicker: 'components/datepicker.md'
     - Field: 'components/field.md'

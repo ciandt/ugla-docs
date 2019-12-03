@@ -39,13 +39,13 @@ O [Header](../../components/header), por exemplo assume o background na cor do t
 
 Calor       | Cor                                           | Hexadecimal | Representação
 :---------- | :-------------------------------------------- | ----------- | -----------:
-GRAY        | Cinza                                         | #656565     | [![gray](../_images/gray.png)](../_images/gray.png)
-RED         | Vermelha                                      | #D71F3C     | [![red](../_images/red.png)](../_images/red.png)
-PURPLE      | Roxo                                          | #641E75     | [![purple](../_images/purple.png)](../_images/purple.png)
-AQUAMARINE  | Aquamarine                                    | #20BEC6     | [![aquamarine](../_images/aquamarine.png)](../_images/aquamarine.png)
-GREEN       | Verde                                         | #20C67B     | [![green](../_images/green.png)](../_images/green.png)
-YELLOW      | Amarelo                                       | #F2B838     | [![yellow](../_images/yellow.png)](../_images/yellow.png)
-WHITE       | Branco nos background e Aquamarine como focal | #FFFFFF     | [![white](../_images/white.png)](../_images/white.png)
+GRAY        | Cinza                                         | #656565     | [![gray](_images/gray.png)](_images/gray.png)
+RED         | Vermelha                                      | #D71F3C     | [![red](_images/red.png)](_images/red.png)
+PURPLE      | Roxo                                          | #641E75     | [![purple](_images/purple.png)](_images/purple.png)
+AQUAMARINE  | Aquamarine                                    | #20BEC6     | [![aquamarine](_images/aquamarine.png)](_images/aquamarine.png)
+GREEN       | Verde                                         | #20C67B     | [![green](_images/green.png)](_images/green.png)
+YELLOW      | Amarelo                                       | #F2B838     | [![yellow](_images/yellow.png)](_images/yellow.png)
+WHITE       | Branco nos background e Aquamarine como focal | #FFFFFF     | [![white](_images/white.png)](_images/white.png)
 
 ### Funções
 O Service oferece algumas funções:

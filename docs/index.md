@@ -32,6 +32,12 @@ Estando em um projeto Angular 2 ou mais, basta executar o comando abaixo no term
 npm i ugla
 ```
 
+Instale também as dependencias necessárias para o Ugla funcionar corretamente:
+
+```bash
+npm i filepond filepond-plugin-file-validate-size filepond-plugin-file-validate-type filepond-plugin-image-crop filepond-plugin-image-exif-orientation filepond-plugin-image-preview filepond-plugin-image-resize filepond-plugin-image-transform js-datepicker ngx-filepond moment tooltip.js
+```
+
 Em seguida, é necessário configurar o Ugla dentro do projeto:
 
 No arquivo: `path/src/app/app.module.ts`:
@@ -40,7 +46,7 @@ No arquivo: `path/src/app/app.module.ts`:
 import { UglaModule, Themes } from 'ugla';
 ```
 
-```typescript
+```typescript hl_lines="4"
 imports: [
   BrowserModule,
   ...,

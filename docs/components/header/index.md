@@ -4,7 +4,7 @@ description: Conhecendo e implementando Header
 # Header
 O componente **Header** é composto por mais dois componentes: [Brand](brand), que é responsável pelo ícone e nome do sistema presentes na tela e [People Card](peoplecard), que carrega os dados do usuário logado e o botão de **Logout**.
 
-[![header](header.png)](header.png)
+[![header](../_images/header.png)](../_images/header.png)
 _Imagem do header_
 
 ## Atributos da tag

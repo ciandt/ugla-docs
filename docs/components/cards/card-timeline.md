@@ -4,7 +4,7 @@ description: Conhecendo e implementando Card Timeline
 # Card Timeline
 O componente **Card Timeline** foi criado para criar linhas do tempo com multiplos cards.
 
-[![Card Timeline](card-timeline.png)](card-timeline.png)
+[![Card Timeline](../_images/card-timeline.png)](../_images/card-timeline.png)
 
 ## Atributos da tag
 

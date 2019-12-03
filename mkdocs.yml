@@ -29,11 +29,12 @@ nav:
     - Colaboradores: 'collaborate/colabs.md'
     - Colaborar com a documentação: 'collaborate/doc.md'
     - Colaborar com a biblioteca: 'collaborate/lib.md'
+  - CSS: 'css/index.md'
   - Componentes: 
     - Header: 
-        - Home: 'components/header/index.md'
-        - Brand: 'components/header/brand.md'
-        - People Card: 'components/header/peoplecard.md'
+      - Home: 'components/header/index.md'
+      - Brand: 'components/header/brand.md'
+      - People Card: 'components/header/peoplecard.md'
     - Button: 'components/button.md'
     - Cards: 
       - Card Timeline: 'components/cards/card-timeline.md'

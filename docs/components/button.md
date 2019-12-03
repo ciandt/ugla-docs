@@ -5,7 +5,7 @@ description: Conhecendo e implementando Button
 
 O componente Button é responsável por criar botões e gerenciar o status deles.
 
-[![buttons](buttons.png)](buttons.png)
+[![buttons](_images/buttons.png)](_images/buttons.png)
 
 ## Atributos da tag
 

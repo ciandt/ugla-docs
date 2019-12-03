@@ -2,7 +2,7 @@ title: Ugla | Componente Checkbox
 description: Conhecendo e implementando Checkbox
 
 # Checkbox
-[![header](checkbox.png)](checkbox.png)
+[![header](_images/checkbox.png)](_images/checkbox.png)
 
 Gera um checkbox com título e texto auxiliar.
 

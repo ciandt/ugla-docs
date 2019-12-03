@@ -2,7 +2,7 @@ title: Ugla | Componente Radio
 description: Conhecendo e implementando Radio
 
 # Radio
-[![header](radio.png)](radio.png)
+[![header](_images/radio.png)](_images/radio.png)
 _Imagem do radio_
 
 ## Atributos da tag

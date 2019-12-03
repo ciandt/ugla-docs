@@ -5,10 +5,10 @@ description: Conhecendo e implementando Login
 O componente Login deve ser adicionado em uma pagina, e ele carrega os ítens necessários para realizar a autenticação.
 Existe dois tipo de autenticação: **Com formulário** e **Apenas com botão**.
 
-[![Login](login-1.png)](login-1.png)
+[![Login](_images/login-1.png)](_images/login-1.png)
 _Login sem Formulário_
 
-[![Login](login-2.png)](login-2.png)
+[![Login](_images/login-2.png)](_images/login-2.png)
 _Login com Formulário_
 
 ## Atributos da tag

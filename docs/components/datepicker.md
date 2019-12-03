@@ -4,13 +4,13 @@ description: Conhecendo e implementando Datepicker
 
 # Datepicker
 
-[![Datepicker](datepicker-1.png)](datepicker-1.png)
+[![Datepicker](_images/datepicker-1.png)](_images/datepicker-1.png)
 
-[![Datepicker](datepicker-2.png)](datepicker-2.png)
+[![Datepicker](_images/datepicker-2.png)](_images/datepicker-2.png)
 
-[![Datepicker](datepicker-3.png)](datepicker-3.png)
+[![Datepicker](_images/datepicker-3.png)](_images/datepicker-3.png)
 
-[![Datepicker](datepicker-4.png)](datepicker-4.png)
+[![Datepicker](_images/datepicker-4.png)](_images/datepicker-4.png)
 
 O componente datepicker gera um campo input com ícone de calendário.
 Para sua criação, foi usado a biblioteca `js-datepicker`[^1] e a biblioteca `moment`[^2].

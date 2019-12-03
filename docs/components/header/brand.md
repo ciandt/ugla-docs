@@ -3,7 +3,7 @@ description: Conhecendo e implementando Brand
 
 # Brand
 
-[![brand](brand.png)](brand.png)
+[![brand](../_images/brand.png)](../_images/brand.png)
 
 O componente Brand é responsável por exibir o logo e nome do sistema.
 

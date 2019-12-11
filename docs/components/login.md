@@ -14,7 +14,7 @@ _Login com Formulário_
 ## Atributos da tag
 
 Atributo                | Input/Output   | Tipo        | Obrigatório    | Valor padrão
-:---------------------- | :------------: | :---------- | :------------- | :-------------: 
+:---------------------- | :------------- | :---------- | :------------: | :------------- 
 header                  | `@Input`       | `String`    | Sim            | Header
 subHeader               | `@Input`       | `String`    | Não            | Subheader
 buttonText              | `@Input`       | `String`    | Não            | Button

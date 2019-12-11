@@ -29,7 +29,12 @@ nav:
     - Colaboradores: 'collaborate/colabs.md'
     - Colaborar com a documentação: 'collaborate/doc.md'
     - Colaborar com a biblioteca: 'collaborate/lib.md'
-  - CSS: 'css/index.md'
+  - CSS: 
+    - Home: 'css/index.md'
+    - Color: css/color.md
+    - Mixins: css/mixins.md
+    - Table: css/table.md
+    - Typography: css/typography.md
   - Componentes: 
     - Header: 
       - Home: 'components/header/index.md'

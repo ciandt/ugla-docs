@@ -60,6 +60,7 @@ nav:
     - Toolbar: 'components/toolbar.md'
   - Diretivas:
     - Grid: 'directives/grid.md'
+    - Lightbox: 'directives/lightbox.md'
   - Serviços:
     - Modal: 'service/modal.md'
     - Ugla Service: 'service/ugla-service.md'

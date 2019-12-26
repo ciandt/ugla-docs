@@ -10,12 +10,13 @@ A diretiva **Lightbox** deve ser usada para criar modais exclusivamente de visua
 ```
 
 ## Atributos aceitos na tag
-Atributo      | Input/Output   | Tipo       | Obrigatório    | Valores padrões
-:------------ | :------------: | :----------| :------------- | :-------------
-uglLightbox   |                | -          | Sim            | -
-image         | `@Input`       | `String`   | Não            | -
-action        | `@Output`      | `Number`   | Não            | -
-actionIcon    | `@Input`       | `String`   | Não            | -
+Atributo      | Input/Output   | Tipo       | Obrigatório           | Valores padrões
+:------------ | :------------: | :----------| :-------------------- | :-------------
+uglLightbox   |                | -          | Sim                   | -
+image         | `@Input`       | `String`   | Não                   | -
+action        | `@Output`      | `Function` | Não                   | -
+actionIcon    | `@Input`       | `String`   | Sim se tiver action   | -
+closeOut      | `@Input`       | `Boolean`  | Não                   | false
 
 !!! info "Atributo [image]"
     O atributo [image] deve ser preenchido com uma string contendo a url da imagem que será renderizada. É eceito imagens com as extensões **png**, **jpg**, **jpeg** e **bmp**.
@@ -25,6 +26,9 @@ actionIcon    | `@Input`       | `String`   | Não            | -
 
 !!! info "Atributo [actionImage]"
     O atributo [actionIcon] recebe o nome de um ícone do [Material](https://material.io/resources/icons/?style=baseline) e, quando houver ícone, ele será renderizado no botão.
+
+!!! info "Atributo [closeOut]"
+    Quando atribuído como TRUE, permite fechar o lightbox clicando fora dele.
 
 ## Implementando
 

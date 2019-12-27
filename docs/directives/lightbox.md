@@ -13,31 +13,40 @@ A diretiva **Lightbox** deve ser usada para criar modais exclusivamente de visua
 Atributo      | Input/Output   | Tipo       | Obrigatório           | Valores padrões
 :------------ | :------------: | :----------| :-------------------- | :-------------
 uglLightbox   |                | -          | Sim                   | -
-image         | `@Input`       | `String`   | Não                   | -
+file          | `@Input`       | `String`   | Não                   | -
 action        | `@Output`      | `Function` | Não                   | -
 actionIcon    | `@Input`       | `String`   | Sim se tiver action   | -
 closeOut      | `@Input`       | `Boolean`  | Não                   | false
 
-!!! info "Atributo [image]"
-    O atributo [image] deve ser preenchido com uma string contendo a url da imagem que será renderizada. É eceito imagens com as extensões **png**, **jpg**, **jpeg** e **bmp**.
+!!! info "Atributo [file]"
+    O atributo [file] deve ser preenchido com uma string contendo a url da imagem que será renderizada. É eceito imagens com as extensões **png**, **jpg**, **jpeg**, **bmp** e **pdf**.
 
 !!! info "Atributo (action)"
     Deve ser passado uma função ao atributo (action). Quando o atributo for declarado, um botão será gerado na parte inferior da lightbox. Ao clicar no botão, a função do action será executada e a modal será fechada.
 
-!!! info "Atributo [actionImage]"
+!!! info "Atributo [actionIcon]"
     O atributo [actionIcon] recebe o nome de um ícone do [Material](https://material.io/resources/icons/?style=baseline) e, quando houver ícone, ele será renderizado no botão.
 
 !!! info "Atributo [closeOut]"
     Quando atribuído como TRUE, permite fechar o lightbox clicando fora dele.
+
+
+## Atalhos
+O Lighbox possui um atalho de teclado implementado.
+
+Tecla | Função
+:---- | :------
+`ESC` | Fecha o lightbox
 
 ## Implementando
 
 ```html tab='HTML'
 <a href="#"
   uglLightbox
-  [image]="'https://i.pinimg.com/originals/15/ba/b4/15bab4ee6c41dae1c5cbe3af0d9b6ef2.jpg'"
+  [file]="'https://i.pinimg.com/originals/15/ba/b4/15bab4ee6c41dae1c5cbe3af0d9b6ef2.jpg'"
   (action)="lightboxAction(event)"
-  [actionIcon]="'delete_outline'">Open</a>
+  [actionIcon]="'delete_outline'"
+  [closeOut]="true">Open</a>
 ```
 
 ```typescript tab='TS'

@@ -13,13 +13,13 @@ A diretiva **Lightbox** deve ser usada para criar modais exclusivamente de visua
 Atributo      | Input/Output   | Tipo       | Obrigatório           | Valores padrões
 :------------ | :------------: | :----------| :-------------------- | :-------------
 uglLightbox   |                | -          | Sim                   | -
-file          | `@Input`       | `String`   | Não                   | -
+fileUrl       | `@Input`       | `String`   | Não                   | -
 action        | `@Output`      | `Function` | Não                   | -
 actionIcon    | `@Input`       | `String`   | Sim se tiver action   | -
 closeOut      | `@Input`       | `Boolean`  | Não                   | false
 
-!!! info "Atributo [file]"
-    O atributo [file] deve ser preenchido com uma string contendo a url da imagem que será renderizada. É eceito imagens com as extensões **png**, **jpg**, **jpeg**, **bmp** e **pdf**.
+!!! info "Atributo [fileUrl]"
+    O atributo [fileUrl] deve ser preenchido com uma string contendo a url da imagem que será renderizada. É eceito imagens com as extensões **png**, **jpg**, **jpeg**, **bmp** e **pdf**.
 
 !!! info "Atributo (action)"
     Deve ser passado uma função ao atributo (action). Quando o atributo for declarado, um botão será gerado na parte inferior da lightbox. Ao clicar no botão, a função do action será executada e a modal será fechada.

@@ -61,6 +61,7 @@ nav:
   - Diretivas:
     - Grid: 'directives/grid.md'
     - Lightbox: 'directives/lightbox.md'
+    - Tooltip: 'directives/tooltip.md'
   - Serviços:
     - Modal: 'service/modal.md'
     - Ugla Service: 'service/ugla-service.md'

@@ -29,7 +29,7 @@ action        | `@Output`      | `function`     | Sim            | -
     O atributo size aceita os valores `large`, `medium`, `small` e o tamanho padrão é `medium`.
 
 !!! info "Color"
-    O atributo campo aceita as cores: `aquamarine`, `red`, `gray`, `green`, `purple` e a cor padrão é `aquamarine`.
+    O atributo color aceita as cores: `aquamarine`, `red`, `gray`, `green`, `purple` e a cor padrão é `aquamarine`.
 
 !!! info "Style"
     O atributo Style aceita os valores: `fill`, `border` e `icon` e o valor padrão é `fill`.

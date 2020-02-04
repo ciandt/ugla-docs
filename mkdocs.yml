@@ -39,6 +39,7 @@ nav:
       - Home: 'components/header/index.md'
       - Brand: 'components/header/brand.md'
       - People Card: 'components/header/peoplecard.md'
+    - Banner: 'components/banner.md'
     - Button: 'components/button.md'
     - Cards: 
       - Card Timeline: 'components/cards/card-timeline.md'

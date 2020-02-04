@@ -3,7 +3,7 @@ description: Um guia completo para uso correto do Ugla
 
 # Styleguide
 
-**Version 1.3.6**
+**Version 1.3.9**
 
 O projeto **Ugla** foi desenvolvido com o objetivo de minimizar esforços no desenvolvimento FrontEnd de sistemas, trazendo consistencia e segurança para projetos que necessitam conversar entre si ou, que sejam totalmente independentes, mantendo uma identidade única e de fácil entendimento.
 

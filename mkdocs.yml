@@ -52,6 +52,7 @@ nav:
     - List Links: 'components/listlinks.md'
     - List Options: 'components/listoptions.md'
     - Login: 'components/login.md'
+    - Page Title: 'components/page-title.md'
     - Pagination: 'components/pagination.md'
     - Quote: 'components/quote.md'
     - Radio: 'components/radio.md'

@@ -74,6 +74,60 @@ onChangeInitialDate(date: Date) {
 Wed Nov 27 2019 00:00:00 GMT-0300 (Horário Padrão de Brasília)
 ```
 
+## Problemas na Modal
+
+!!! warning "Usando juntamente com o componente [Modal](/service/modal/)"
+    Para que o datepicker funcione corretamente dentro de uma modal, o options precisa ser carregado somente após a chamada da modal e, dentro de um timeout.
+
+```html tab='HTML'
+<ugl-modal
+    (cancelClick)="cancel()"
+    (confirmClick)="confirm()"
+    [cancelButtonText]="'Cancel'"
+    [confirmButtonText]="'Confirm'">
+
+    <ugl-datepicker [label]="'Inital Date'"
+                [name]="'initialDate'"
+                [options]="onInitDatepicker()"
+                [message]="'Initial date must be before final date'"
+                [messageRequired]="'Field required'"
+                [invalid]="false"
+                [required]="true"
+                [messageInvalidSelection]="'This date is invalid for selection'"
+                [language]="'pt-BR'"
+                (onSelectValue)="onChangeInitialDate($event)"
+                #initialDate></ugl-datepicker>
+
+</ugl-modal>
+
+```
+
+```ts tab="TS"
+options = null;
+
+cancel() {
+    this.modal.closeModal();
+  }
+
+confirm() {
+  this.modal.closeModal();
+
+  setTimeout({() => this.options = this.onInitDatepicker()}, 1);
+}
+
+// Options
+onInitDatepicker() {
+  return {
+    startDate: new Date(),
+    position: 'br'
+  };
+}
+
+onChangeInitialDate(date: Date) {
+  console.log(date)
+}
+```
+
 [^1]: `js-datepicker: ^4.6.6`: https://www.npmjs.com/package/js-datepicker
 [^2]: `moment: ^2.24.0`: https://www.npmjs.com/package/moment 
 

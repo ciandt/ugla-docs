@@ -31,9 +31,9 @@ confirmButtonText  | `@Input`       | `String`       | Sim            | -
     (confirmClick)="confirm()"
     [cancelButtonText]="'Cancel'"
     [confirmButtonText]="'Confirm'">
-    
+
     <p>Text</p>
-    
+
     </ugl-modal>
 ```
 
@@ -64,7 +64,7 @@ this.modal.error(
   true
 );
 ```
-[![modal-error](_images/modal-error.png)](_images/buttons.png)
+[![modal-error](_images/modal-error.png)](_images/modal-error.png)
 
 ### Error
 ```typescript
@@ -75,7 +75,7 @@ this.modal.warning(
 );
 ```
 
-[![modal-warning](_images/modal-warning.png)](_images/buttons.png)
+[![modal-warning](_images/modal-warning.png)](_images/modal-warning.png)
 
 
 ### Success
@@ -86,7 +86,7 @@ this.modal.success(
   true
 );
 ```
-[![modal-success](_images/modal-success.png)](_images/buttons.png)
+[![modal-success](_images/modal-success.png)](_images/modal-success.png)
 
 ### Info
 ```typescript
@@ -96,4 +96,4 @@ this.modal.info(
   true
 );
 ```
-[![modal-info](_images/modal-info.png)](_images/buttons.png)
+[![modal-info](_images/modal-info.png)](_images/modal-info.png)

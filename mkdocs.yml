@@ -36,14 +36,16 @@ nav:
     - Table: css/table.md
     - Typography: css/typography.md
   - Páginas: 'pages/index.md'
-  - Componentes: 
-    - Header: 
+  - Componentes:
+    - Header:
       - Home: 'components/header/index.md'
       - Brand: 'components/header/brand.md'
       - People Card: 'components/header/peoplecard.md'
+    - Aide: 'components/aside.md'
     - Banner: 'components/banner.md'
+    - Breadcrumb: 'components/breadcrumb.md'
     - Button: 'components/button.md'
-    - Cards: 
+    - Cards:
       - Card Timeline: 'components/cards/card-timeline.md'
     - Checkbox: 'components/checkbox.md'
     - Datepicker: 'components/datepicker.md'

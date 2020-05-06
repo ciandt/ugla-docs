@@ -29,11 +29,13 @@ nav:
     - Colaboradores: 'collaborate/colabs.md'
     - Colaborar com a documentação: 'collaborate/doc.md'
     - Colaborar com a biblioteca: 'collaborate/lib.md'
+    - Trello e Issues: 'collaborate/tasks.md'
   - CSS:
     - Color: css/color.md
     - Mixins: css/mixins.md
     - Table: css/table.md
     - Typography: css/typography.md
+  - Páginas: 'pages/index.md'
   - Componentes: 
     - Header: 
       - Home: 'components/header/index.md'

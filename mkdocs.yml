@@ -35,6 +35,7 @@ nav:
     - Mixins: css/mixins.md
     - Table: css/table.md
     - Typography: css/typography.md
+  - Ugla Rules: 'rules/index.md'
   - Páginas: 'pages/index.md'
   - Componentes:
     - Header:

@@ -3,8 +3,8 @@ site_description: O projeto Ugla foi desenvolvido com o objetivo de minimizar es
 site_author: Regivaldo Silva 
 site_url: https://ugla.dev
 
-repo_name: ciandt/ugla
-repo_url: https://github.com/ciandt/ugla
+repo_name: ciandt/ugla-docs
+repo_url: https://github.com/ciandt/ugla-docs
 edit_uri: ''
 
 google_analytics: ['UA-152823777-1', 'ugla.dev']

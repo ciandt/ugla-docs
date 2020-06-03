@@ -12,7 +12,7 @@ npm i -d ugla-rules
 Em seguida, importe o **module** ao `app.module.ts`:
 
 ```typescript
-UglaRulesModule.forRoot(APPLICATION)
+UglaRulesModule.forRoot({ acronym: APPLICATION })
 ```
 
 Em seguida, no `app.component.ts` é necessário invocar a função `createApplication` que armazenará todas as applications, features e operations do usuário:
@@ -32,7 +32,7 @@ constructor(
 Para definir a aplicação, é preciso no `forRoot` passar o Acronym da aplicação:
 
 ```typescript
-UglaRulesModule.forRoot('EXPENSE')
+UglaRulesModule.forRoot({ acronym: 'EXPENSE' })
 ```
 
 ## Definindo a feature

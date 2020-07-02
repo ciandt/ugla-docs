@@ -3,7 +3,9 @@ description: Um guia completo para uso correto do Ugla
 
 # Styleguide
 
-**Version 1.6.7**
+**Version**
+![version](https://img.shields.io/npm/v/ugla)
+
 
 O projeto **Ugla** foi desenvolvido com o objetivo de minimizar esforços no desenvolvimento FrontEnd de sistemas, trazendo consistencia e segurança para projetos que necessitam conversar entre si ou, que sejam totalmente independentes, mantendo uma identidade única e de fácil entendimento.
 

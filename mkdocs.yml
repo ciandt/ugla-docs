@@ -11,17 +11,18 @@ google_analytics: ['UA-152823777-1', 'ugla.dev']
 
 theme:
   name: 'material'
-  favicon: 'assets/images/favicon.ico'
   language: pt
+  feature:
+    tabs: true
   palette:
     primary: indigo
     accent: indigo
   font:
     text: Roboto
     code: Roboto Mono
-  logo: 'assets/images/favicon.ico'
-  feature:
-    tabs: true
+  icon:
+    logo: 'assets/images/favicon.ico'
+  favicon: 'assets/images/favicon.ico'
 
 nav:
   - Getting started: 'index.md'

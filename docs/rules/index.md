@@ -3,6 +3,9 @@ description: Um guia completo de como implementar o Ugla Rules
 
 # Ugla Rules
 
+## Version
+![version](https://img.shields.io/npm/v/ugla-rules)
+
 ## Instalando
 Para instalar, ececute no terminal:
 ```bash

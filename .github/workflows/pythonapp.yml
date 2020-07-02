@@ -47,7 +47,7 @@ jobs:
         node-version: 14
         registry-url: https://registry.npmjs.org/
 
-    - name: Deploy site
+    - name: Install firebase
       run: npm i firebase-tools
 
     - name: Deploy site

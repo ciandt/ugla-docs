@@ -116,3 +116,8 @@ markdown_extensions:
 extra:
   manifest: 'manifest.webmanifest'
   version: 1.0
+  # social:
+  #   - type: 'github'
+  #     link: 'https://github.com/ciandt/ugla'
+  #   - type: 'link'
+  #     link: 'https://ugla.dev'

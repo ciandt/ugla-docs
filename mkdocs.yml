@@ -20,8 +20,6 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  icon:
-    custom_logo: 'assets/images/favicon.ico'
   favicon: 'assets/images/favicon.ico'
 
 nav:

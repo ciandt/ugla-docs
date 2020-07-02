@@ -12,8 +12,6 @@ google_analytics: ['UA-152823777-1', 'ugla.dev']
 theme:
   name: 'material'
   language: pt
-  feature:
-    tabs: true
   palette:
     primary: indigo
     accent: indigo
@@ -23,6 +21,8 @@ theme:
   icon:
     custom_logo: 'assets/images/favicon.ico'
   favicon: 'assets/images/favicon.ico'
+  feature:
+    tabs: true
 
 nav:
   - Getting started: 'index.md'

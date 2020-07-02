@@ -21,8 +21,8 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    logo: 'assets/images/favicon.ico'
-  favicon: 'assets/images/favicon.ico'
+    logo: './assets/images/favicon.ico'
+  favicon: './assets/images/favicon.ico'
 
 nav:
   - Getting started: 'index.md'

@@ -42,10 +42,13 @@ jobs:
     - name: Install Build docs
       run: mkdocs build --verbose --clean --strict
 
-    - name: Deploy on Firebase
-      uses: pizzafox/firebase-action@1.0.7
-      env:
-        PROJECT_ID: ${{ secrets.PROJECT_ID }}
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+    - uses: actions/setup-node@v1
       with:
-        args: deploy
+        node-version: 14
+        registry-url: https://registry.npmjs.org/
+
+    - name: Deploy site
+      run: npm i firebase-tools
+
+    - name: Deploy site
+      run: node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"

@@ -19,19 +19,20 @@ checked       | `@Output`      | `function`  | Sim
 
 ## Como usar
 
-```html tab='HTML'
-<ugl-checkbox
-    [mainText]="'Main Text'"
-    [name]="'list'"
-    [subtext]="'Sub Text'"
-    [disabled]="false"
-    [isChecked]="false"
-    [checked]="checked()"
-    ></ugl-checkbox>
-```
+=== "HTML"
+    ```html
+    <ugl-checkbox
+        [mainText]="'Main Text'"
+        [name]="'list'"
+        [subtext]="'Sub Text'"
+        [disabled]="false"
+        [isChecked]="false"
+        [checked]="checked()"></ugl-checkbox>
+    ```
 
-```ts tab="TS"
-checked() {
+=== "TS"
+    ```ts
+        checked() {
 
-}
-```
+        }
+    ```

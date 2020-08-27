@@ -42,7 +42,8 @@ onSelectValue           | `@Output`      | `function`  | Sim
 
 ## Como usar
 
-```html tab='HTML'
+=== "HTML"
+```html
 <ugl-datepicker [label]="'Inital Date'"
                 [name]="'initialDate'"
                 [options]="onInitDatepicker()"
@@ -55,22 +56,22 @@ onSelectValue           | `@Output`      | `function`  | Sim
                 (onSelectValue)="onChangeInitialDate($event)"
                 #initialDate></ugl-datepicker>
 ```
+=== "TS"
+```typescript
+  // Options
+  onInitDatepicker() {
+    return {
+      startDate: new Date(),
+      position: 'br'
+    };
+  }
 
-```ts tab="TS"
-// Options
-onInitDatepicker() {
-  return {
-    startDate: new Date(),
-    position: 'br'
-  };
-}
-
-onChangeInitialDate(date: Date) {
-  console.log(date)
-}
+  onChangeInitialDate(date: Date) {
+    console.log(date)
+  }
 ```
-
-```bash tab="Console"
+=== "Console"
+```bash
 Wed Nov 27 2019 00:00:00 GMT-0300 (Horário Padrão de Brasília)
 ```
 
@@ -79,7 +80,8 @@ Wed Nov 27 2019 00:00:00 GMT-0300 (Horário Padrão de Brasília)
 !!! warning "Usando juntamente com o componente [Modal](/service/modal/)"
     Para que o datepicker funcione corretamente dentro de uma modal, o options precisa ser carregado somente após a chamada da modal e, dentro de um timeout.
 
-```html tab='HTML'
+=== "HTML"
+```html
 <ugl-modal
     (cancelClick)="cancel()"
     (confirmClick)="confirm()"
@@ -101,8 +103,8 @@ Wed Nov 27 2019 00:00:00 GMT-0300 (Horário Padrão de Brasília)
 </ugl-modal>
 
 ```
-
-```ts tab="TS"
+=== "TS"
+```ts
 options = null;
 
 cancel() {

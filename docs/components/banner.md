@@ -32,16 +32,17 @@ close             | `@Output`      | `function`     | Não            | -
   [message]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quis.'"></ugl-banner>
 ```
 
-```html tab="HTML"
-<ugl-banner
-  [title]="'The banner title'"
-  [message]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quis.'"
-  [color]="'yellow'"
-  colose="closeClick()"></ugl-banner>
-```
-
-```typscript tab="TS"
-closeClick() {
-  console.log('Close this banner');
-}
-```
+=== "HTML"
+    ```html 
+    <ugl-banner
+      [title]="'The banner title'"
+      [message]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quis.'"
+      [color]="'yellow'"
+      colose="closeClick()"></ugl-banner>
+    ```
+=== "TS"
+    ```typscript
+      closeClick() {
+        console.log('Close this banner');
+      }
+    ```

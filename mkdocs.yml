@@ -98,8 +98,12 @@ markdown_extensions:
       linenums: true
   - toc:
       permalink: true
+  - pymdownx.highlight:
+      use_pygments: true
   - pymdownx.betterem:
       smart_enable: all
+  - pymdownx.tabbed
+  - pymdownx.superfences
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details

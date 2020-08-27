@@ -39,25 +39,26 @@ action        | `@Output`      | `function`     | Sim            | -
 
 ## Como usar
 
-```html tab='HTML'
-<ugl-button
-      [id]="'test'"
-      [size]="'medium'"
-      [color]="'aquamarine'"
-      [style]="'fill'"
-      [wave]="true"
-      [title]="'Title button'"
-      [disabled]="false"
-      [type]="'button'"
-      [tabindex]="1"
-      [floating]="false"
-      (action)="clickButton()">Fill Button</ugl-button>
-```
-
-```ts tab="TS"
-clickButton() {
-  console.log("Button clicked")
-}
-```
+=== "HTML"
+    ```html
+    <ugl-button
+        [id]="'test'"
+        [size]="'medium'"
+        [color]="'aquamarine'"
+        [style]="'fill'"
+        [wave]="true"
+        [title]="'Title button'"
+        [disabled]="false"
+        [type]="'button'"
+        [tabindex]="1"
+        [floating]="false"
+        (action)="clickButton()">Fill Button</ugl-button>
+    ```
+=== "TS"
+    ```typescript
+        clickButton() {
+            console.log("Button clicked")
+        }
+    ```
 
 [^1]: Necessário análise se de fato é necessário.

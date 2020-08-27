@@ -43,7 +43,7 @@ nav:
       - Home: 'components/header/index.md'
       - Brand: 'components/header/brand.md'
       - People Card: 'components/header/peoplecard.md'
-    - Aide: 'components/aside.md'
+    - Aside: 'components/aside.md'
     - Banner: 'components/banner.md'
     - Breadcrumb: 'components/breadcrumb.md'
     - Button: 'components/button.md'

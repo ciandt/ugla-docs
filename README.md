@@ -13,7 +13,7 @@ Para contribuir, basta realizar um **fork** e realizar as devidas alterações, 
 Para executar este projeto, é necessário ter a versão `3.7` do Python instalada.
 
 **Instale o pip do Python:**
-`python -m pip install --upgrade pip``
+`python -m pip install --upgrade pip`
 
 **Instale o MKDocs e suas dependencias:**
 ```bash

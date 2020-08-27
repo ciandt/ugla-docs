@@ -21,7 +21,7 @@ E, é possível manter a tabela como header fixo na tela usando a claase `.fixed
 
 ## Implementação
 
-```html tab='HTML'
+```html
 <table class="base-table central theme-colored-aquamarine">
     <thead>
       <tr>

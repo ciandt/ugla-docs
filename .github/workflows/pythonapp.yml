@@ -49,3 +49,12 @@ jobs:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       with:
         args: deploy
+
+    - name: Send message Telegram
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          Ugla Docs was deployed on ugla.dev by {{ repo.namespace }}
+          Open the https://ugla.dev for see a new version documentation

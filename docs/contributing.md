@@ -1,6 +1,6 @@
 ---
 id: contributing
-title: Contributing
+title: Contribuindo
 ---
 
 O projeto **Ugla** conta com diversos colaboradores, pessoas que dedicaram um tempo para torná-la mais completa para o uso.

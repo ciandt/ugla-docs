@@ -9,6 +9,7 @@ module.exports = {
   organizationName: 'ciandt', // Usually your GitHub org/user name.
   projectName: 'ugla', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: 'Ugla Docs',
       logo: {
@@ -96,7 +97,10 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/ciandt/ugla-docs/blog/',
+          editUrl: 'https://github.com/ciandt/ugla-docs/tree/main/blog',
+          postsPerPage: 6,
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All our posts',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

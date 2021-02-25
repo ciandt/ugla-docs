@@ -1,4 +1,7 @@
-# Checkbox Column
+---
+id: checkbox-column-item
+title: Checkbox Column item
+---
 
 ```typescript
 /**

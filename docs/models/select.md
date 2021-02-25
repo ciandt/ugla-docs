@@ -1,4 +1,7 @@
-# Select
+---
+id: select
+title: Select
+---
 
 ```typescript
 import { Options } from './options';

@@ -1,4 +1,7 @@
-# Table Header
+---
+id: table-header
+title: Table Header
+---
 
 ```typescript
 export class TableHeader {

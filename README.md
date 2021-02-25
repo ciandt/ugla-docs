@@ -1,31 +1,33 @@
-# Ugla Docs
+# Website
 
-[![Build Status](https://github.com/ciandt/ugla-docs/workflows/Documentation/badge.svg)](https://github.com/ciandt/ugla-docs/actions)
+This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
-Este repositório centraliza a documentação completa da biblioteca [Ugla](https://www.npmjs.com/package/ugla).
+## Installation
 
-## Contribuindo
-
-Para contribuir, basta realizar um **fork** e realizar as devidas alterações, em seguida, submeter uma PR.
-
-## Rodando o projeto local
-
-Para executar este projeto, é necessário ter a versão `3.7` do Python instalada.
-
-**Instale o pip do Python:**
-`python -m pip install --upgrade pip`
-
-**Instale o MKDocs e suas dependencias:**
-```bash
-pip install mkdocs mkdocs-material pymdown-extensions pygments
+```console
+yarn install
 ```
 
-## Iniciando o projeto
-Execute o comando `mkdocs serve` para iniciar o servidor local na porta `8000`.
+## Local Development
 
-## Build final
-Execute o comando baixo para realizar uma build para produção.
+```console
+yarn start
+```
 
-```build
-mkdocs build --verbose --clean --strict
-``` 
+This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```console
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

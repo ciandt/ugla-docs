@@ -1,4 +1,7 @@
-# Class Menu
+---
+id: menu
+title: Menu
+---
 
 ```typescript
 import { MenuItem } from './menu-item';

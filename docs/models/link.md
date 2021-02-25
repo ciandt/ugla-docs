@@ -1,4 +1,8 @@
-# Link
+---
+id: link
+title: Link
+---
+
 
 ```typescript
 export class Link {

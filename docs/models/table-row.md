@@ -1,4 +1,7 @@
-# Table Row
+---
+id: table-row
+title: Table Row
+---
 
 ```typescript
 import { TableColumn } from './table-column';

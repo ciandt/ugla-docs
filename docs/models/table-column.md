@@ -1,4 +1,7 @@
-# Table Column
+---
+id: table-column
+title: Table Column
+---
 
 ```typescript
 export class TableColumn {

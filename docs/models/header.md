@@ -1,4 +1,7 @@
-# Header
+---
+id: header
+title: Header
+---
 
 ```typescript
 import { People } from './people';

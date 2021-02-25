@@ -1,4 +1,7 @@
-# Class People
+---
+id: people
+title: People
+---
 
 ```typescript
 export class People {

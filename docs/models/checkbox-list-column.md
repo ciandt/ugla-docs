@@ -1,4 +1,7 @@
-# Checkbox Column item
+---
+id: checkbox-list-column
+title: Checkbox List Column
+---
 
 ```typescript
 import { CheckboxColumnItem } from './checkbox-column-item';

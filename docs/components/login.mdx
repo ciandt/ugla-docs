@@ -1,0 +1,81 @@
+---
+id: login
+title: Login
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+O componente Login deve ser adicionado em uma pagina, e ele carrega os ítens necessários para realizar a autenticação.
+
+Existe dois tipo de autenticação: **Com formulário** e **Apenas com botão**.
+
+![img](../../static/components/login-1.png)
+_Login sem Formulário_
+
+![img](../../static/components/login-2.png)
+_Login com Formulário_
+
+## Atributos da tag
+
+Atributo                | Input/Output   | Tipo        | Obrigatório    | Valor padrão
+:---------------------- | :------------- | :---------- | :------------: | :------------- 
+header                  | `@Input`       | `String`    | Sim            | Header
+subHeader               | `@Input`       | `String`    | Não            | Subheader
+buttonText              | `@Input`       | `String`    | Não            | Button
+desktopImage            | `@Input`       | `String`    | Não            | -
+mobileImage             | `@Input`       | `String`    | Não            | -
+floatLogo               | `@Input`       | `String`    | Não            | - 
+googleLogo              | `@Input`       | `String`    | Não            | -
+buttonBackground        | `@Input`       | `String`    | Não            | red
+hasForm                 | `@Input`       | `Boolean`   | Não            | false
+fieldUser               | `@Input`       | `Boolean`   | Não            | User
+fieldPass               | `@Input`       | `Boolean`   | Não            | Password
+signIn                  | `@Input`       | `String`    | Sim            | -
+
+:::info Button background
+As cores aceitas são: `red`, `aquamarine`, `gray`, `yellow`, `green` e `purple`
+:::
+
+## Como usar
+
+<Tabs
+  defaultValue="html"
+  values={[
+    { label: 'HTML', value: 'html', },
+    { label: 'Typescript', value: 'typescript', }
+  ]
+}>
+<TabItem value="html">
+
+```html
+<ugl-login #auth
+  [header]="'Ugla'"
+  [subheader]="'Library'"
+  [buttonText]="'Authenticate'"
+  [desktopImage]="'./assets/imgs/autentication-desktop.jpg'"
+  [mobileImage]="'./assets/imgs/autentication-mobile.jpg'"
+  [googleLogo]="'./assets/imgs/icon-google.svg'"
+  [buttonBackgroud]="'aquamarine'"
+  [hasForm]="true"
+  (signIn)="signIn2()"></ugl-login>
+```
+
+</TabItem>
+
+<TabItem value="typescript">
+
+```typescript
+// Para o tipo Form, recebe o objeto do tipo Auth
+signIn(auth: Auth) {
+  this.toast.success('Login', `Usuário ${auth.user} autenticado com sucesso`, 5000);
+}
+
+// Para o tipo No Form, não recebe o objeto do tipo Auth
+signIn2() {
+  this.toast.success('Login', `Usuário autenticado com sucesso`, 5000);
+}
+```
+
+</TabItem>
+</Tabs>

@@ -1,4 +1,7 @@
-# Options
+---
+id: options
+title: Options
+---
 
 ```typescript
 export class Options {

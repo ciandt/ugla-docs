@@ -1,4 +1,7 @@
-# Class Menu Item
+---
+id: menu-item
+title: Menu Item
+---
 
 ```typescript
 export class MenuItem {

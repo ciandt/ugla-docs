@@ -1,0 +1,26 @@
+---
+id: people-card
+title: People Card
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+![img](../../static/components/people.png)
+
+O componente People Card é responsável por exibir os dados do usuário logado e o botão de **logout**.
+
+## Atributos da tag
+
+Atributo      | Tipo                      | Obrigatório
+:------------ | :------------------------ | -----------:
+people        | [People](../../docs/models/people/)  | Sim
+logoutText    | `string`                  | Sim
+logoutAction  | `function`                | Sim
+
+```html
+<ugl-people-card
+  [people]='people'
+  [logoutText]="'Logout'"
+  (logoutAction)='logout()'></ugl-people-card>
+```

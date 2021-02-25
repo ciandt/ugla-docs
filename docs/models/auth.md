@@ -1,4 +1,7 @@
-# Auth
+---
+id: auth
+title: Auth
+---
 
 ```typescript
 export class Auth {

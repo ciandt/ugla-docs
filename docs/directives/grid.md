@@ -1,7 +1,11 @@
-title: Ugla | Directives Grid
-description: Conhecendo e implementando Grid
+---
+id: grid
+title: Grid
+---
 
-# Grid
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 A diretiva **Grid** deve ser usada para criar os grids nas páginas.
 É possível usar a diretiva em qualquer elemento HTML.
 
@@ -25,36 +29,50 @@ span          | `@Input`       | `Number`   | Não            | -
 spanSm        | `@Input`       | `Number`   | Não            | -
 customCol     | `@Input`       | `String`   | Não            | -
 
-!!! info "[uglGrid]"
-    Este é um atributo obrigatório, ele inicializa a diretiva no elemento html.
+:::info [uglGrid]
+Este é um atributo obrigatório, ele inicializa a diretiva no elemento html.
+:::
 
-!!! info "[grid]"
-    Este atributo pode receber os valores `true` e `false`, quando true, indica que o elemento é um elemento de grid, o que quer dizer que é nele que serão atribuido os valores das colunas.
+:::info [grid]
+Este atributo pode receber os valores `true` e `false`, quando true, indica que o elemento é um elemento de grid, o que quer dizer que é nele que serão atribuido os valores das colunas.
+:::
 
-!!! info "[col] e [colSm]"
-    Estes atributos recebem valores numéricos de `1` à `12`, e eles que determina a quantidade de colunas que estarão no grid. As colunas terão sempre o mesmo tamanho.
+:::info [col] e [colSm]
+Estes atributos recebem valores numéricos de `1` à `12`, e eles que determina a quantidade de colunas que estarão no grid. As colunas terão sempre o mesmo tamanho.
     
-    * [col] - deve ser usado para desktop
-    * [colSm] - deve ser usado para mobile
+* [col] - deve ser usado para desktop
+* [colSm] - deve ser usado para mobile
+:::
 
-!!! info "[gap]"
-    Este atributo adiciona um espaço entre as colunas. Ele aceita qualquer valor numérico e este será convertido para a medida `rem`. Assim, se for atribuído `[gap]="1"` será adicionado `1rem` na distância entre as colunas.
+:::info [gap]
+Este atributo adiciona um espaço entre as colunas. Ele aceita qualquer valor numérico e este será convertido para a medida `rem`. Assim, se for atribuído `[gap]="1"` será adicionado `1rem` na distância entre as colunas.
 
-    * [gap] - deve ser usado para desktop
-    * [gapSm] - deve ser usado para mobile
+* [gap] - deve ser usado para desktop
+* [gapSm] - deve ser usado para mobile
+:::
 
-!!! info "[span]"
-    Este atributo adiciona uma ou mais colunas a direita do elemento que recebe o atributo. Ele aceita um valor numérico e o atributo não deve ser utilizado no elemento grid e sim em um elemento filho.
+:::info [span]
+Este atributo adiciona uma ou mais colunas a direita do elemento que recebe o atributo. Ele aceita um valor numérico e o atributo não deve ser utilizado no elemento grid e sim em um elemento filho.
 
-    * [span] - deve ser usado para desktop
-    * [spanSm] - deve ser usado para mobile
+* [span] - deve ser usado para desktop
+* [spanSm] - deve ser usado para mobile
+:::
 
-!!! info "[customCol]"
-    Este atributo cria colunas com valor customizado. Ele aceita valores com medidas padrão do CSS (px, rem, %). Para usar, basta passar a largura de cada coluna da seguinte maneira: `[customCol]="'50% 25% 25%'"`, nesse exemplo, serão criados três colunas, sendo a primeira com o tamanho de 50%, o segundo com 25% e o terceiro com 25%. Ainda é possível usar os atributos `[gap]` e `[gapSm]`.
+:::info [customCol]
+Este atributo cria colunas com valor customizado. Ele aceita valores com medidas padrão do CSS (px, rem, %). Para usar, basta passar a largura de cada coluna da seguinte maneira: `[customCol]="'50% 25% 25%'"`, nesse exemplo, serão criados três colunas, sendo a primeira com o tamanho de 50%, o segundo com 25% e o terceiro com 25%. Ainda é possível usar os atributos `[gap]` e `[gapSm]`.
+:::
 
 ## Exemplo de código
+<Tabs
+  defaultValue="html1"
+  values={[
+    { label: 'Implementação', value: 'html1', },
+    { label: 'Resultado', value: 'html2', },
+  ]
+}>
+<TabItem value="html1">
 
-```html tab='Implementação'
+```html
 <div uglGrid [grid]="true" [col]="4" [colSm]="2" [gap]="1" [gapSm]="2">
   <div uglGrid [span]="1" [spanSm]="2">Coluna 1</div>
   <div>Coluna 2</div>
@@ -62,7 +80,11 @@ customCol     | `@Input`       | `String`   | Não            | -
 </div>
 ```
 
-```html tab='Resultado'
+</TabItem>
+
+<TabItem value="html2">
+
+```html
 <div class="grid col-4 col-sm-2 gap-1 gap-sm-2">
   <div class="span-1 span-sm-2">Coluna 1</div>
   <div>Coluna 2</div>
@@ -70,9 +92,21 @@ customCol     | `@Input`       | `String`   | Não            | -
 </div>
 ```
 
-### Com colunas customizadas
+</TabItem>
+</Tabs>
 
-```html tab='Implementação'
+
+### Com colunas customizadas
+<Tabs
+  defaultValue="html1"
+  values={[
+    { label: 'Implementação', value: 'html1', },
+    { label: 'Resultado', value: 'html2', },
+  ]
+}>
+<TabItem value="html1">
+
+```html
 <div uglGrid [grid]="true" [customCol]="'50% 25% 25%'">
   <div>Coluna 50%</div>
   <div>Coluna 25% 1</div>
@@ -80,7 +114,11 @@ customCol     | `@Input`       | `String`   | Não            | -
 </div>
 ```
 
-```html tab='Resultado'
+</TabItem>
+
+<TabItem value="html2">
+
+```html
 <div class="grid" style="grid-template-columns: 50% 25% 25%;">
   <div>Coluna 50%</div>
   <div>Coluna 25% 1</div>
@@ -88,12 +126,15 @@ customCol     | `@Input`       | `String`   | Não            | -
 </div>
 ```
 
+</TabItem>
+</Tabs>
+
 ### Exibição
-[![grid](_images/grid-1.png)](_images/grid-1.png)
-_[grid]="true" [col]="4"_
+![img](../../static/directives/grid-1.png)
+`[grid]="true" [col]="4"`
 
-[![grid](_images/grid-2.png)](_images/grid-2.png)
-_[grid]="true" [col]="4" [gap]="1"_
+![img](../../static/directives/grid-2.png)
+`[grid]="true" [col]="4" [gap]="1"`
 
-[![grid](_images/grid-3.png)](_images/grid-3.png)
-_[span]="1"_
+![img](../../static/directives/grid-3.png)
+`[span]="1"`

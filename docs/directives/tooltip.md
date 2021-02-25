@@ -1,7 +1,8 @@
-title: Ugla | Directives Tooltip
-description: Conhecendo e implementando Tooltip
+---
+id: tooltip
+title: Tooltip
+---
 
-# Tooltip
 A diretiva **tooltip** deve ser usada para criar visualizações de titles.
 
 ## Ativando
@@ -16,9 +17,10 @@ uglTooltip      | `@Input`       | `Object`   | Sim, mas não precisa passar val
 uglTooltipTitle | `@Input`       | `String`   | Sim                                 | -
 
 
-!!! info "Atributo [uglTooltip]"
-  O **uglTooltip** é um valor declarativo, então ele é obrigatório. Porém, ele ainda aceita alguns valores para formatar a disposição do tooltip.
-  Para tal, basta informar o objeto: `{placement: 'left', trigger: 'click'}`.
+:::info Atributo [uglTooltip]
+O **uglTooltip** é um valor declarativo, então ele é obrigatório. Porém, ele ainda aceita alguns valores para formatar a disposição do tooltip.
+Para tal, basta informar o objeto: `{placement: 'left', trigger: 'click'}`.
+:::
 
 ### Atributos aceitos no atributo uglTooltip
 Atributo        | Valores permitidos              | Valores padrões

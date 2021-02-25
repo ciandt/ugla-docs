@@ -1,0 +1,62 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+      - stable
+  pull_request:
+    branches:
+      - main
+      - stable
+      - '!dependabot/*'
+
+jobs:
+  build:
+    name: Build Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache node modules
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: |
+          ~/.npm
+          node_modules/
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+    
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 15
+        registry-url: https://registry.npmjs.org/
+
+    - name: Install dependencies
+      run: npm i
+
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy on Firebase
+      uses: pizzafox/firebase-action@1.0.7
+      env:
+        PROJECT_ID: ${{ secrets.PROJECT_ID }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      with:
+        args: deploy
+
+    - name: Send message Telegram
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          Ugla Docs was deployed on ugla.dev by {{ repo.namespace }}
+          Open the https://ugla.dev for see a new version documentation

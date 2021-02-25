@@ -13,7 +13,7 @@ O projeto **Ugla** foi desenvolvido com o objetivo de minimizar esforços no des
 Ugla é na realidade um projeto que visa unir em seu nome tudo aquilo que se faz necessário para o desenvolvimento de um sistema.
 
 ### Protótipo
-Todos seus componentes são planejados separadamente e adicionados a uma biblioteca de protótipo. Seus componentes são desenvolvidos no [**Sketch**](https://www.sketch.com/).
+Todos seus componentes são planejados separadamente e adicionados a uma biblioteca de protótipo. Seus componentes são desenvolvidos no [**Figma**](https://www.figma.com/).
 
 ### Angular
 Cada componente do protótipo é desenvolvido dentro de uma biblioteca [**Angular**](https://angular.io/) que, considerando cada possibilidade, implementa de forma prática o que foi previsto no protótipo.
@@ -37,12 +37,20 @@ npm i ugla
 Instale também as dependencias necessárias para o Ugla funcionar corretamente:
 
 ```bash
-npm i filepond filepond-plugin-file-validate-size filepond-plugin-file-validate-type filepond-plugin-image-crop filepond-plugin-image-exif-orientation filepond-plugin-image-preview filepond-plugin-image-resize filepond-plugin-image-transform js-datepicker ngx-filepond moment tooltip.js
+npm i filepond
+  filepond-plugin-file-validate-size
+  filepond-plugin-file-validate-type
+  filepond-plugin-image-crop
+  filepond-plugin-image-exif-orientation
+  filepond-plugin-image-preview
+  filepond-plugin-image-resize
+  filepond-plugin-image-transform
+  js-datepicker
+  ngx-filepond
+  moment tooltip.js
 ```
 
 Em seguida, é necessário configurar o Ugla dentro do projeto:
-
-No arquivo: `path/src/app/app.module.ts`:
 
 ```jsx title="path/src/app/app.module.ts"
 import { UglaModule, Themes } from 'ugla';
@@ -59,8 +67,6 @@ imports: [
 :::info Themas
 Você pode escolher entre um dos temas que o Ugla possuí: **RED**, **YELLOW**, **AQUAMARINE**, **GREEN**, **GRAY** e **WHITE**.
 :::
-
-E, no arquivo `path/style.scss`:
 
 ```scss title="path/style.scss"
 @import '~ugla/src/sass/index';

@@ -2,15 +2,11 @@ module.exports = {
   docs: [
     {
       type: 'doc',
-      id: 'get-started',
+      id: 'get-started'
     },
     {
-      type: 'category',
-      label: 'Collaborate',
-      items: [
-        'collaborate/contributors',
-        'collaborate/contributing'
-      ]
+      type: 'doc',
+      id: 'contributing'
     },
     {
       type: 'category',

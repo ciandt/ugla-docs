@@ -1,0 +1,66 @@
+---
+id: contributing
+title: Contributing
+---
+
+O projeto **Ugla** conta com diversos colaboradores, pessoas que dedicaram um tempo para torná-la mais completa para o uso.
+
+O **Ugla** possuí duas vertentes que caminham justas: Protótipo e Biblioteca.
+
+Os componentes foram prototipados, seguindo boas práticas de UI, com análises de UX e em seguida os componentes foram implementados com a framework Angular.
+
+# Biblioteca Ugla
+Você pode contribuir para a biblioteca com melhorias, correções de bugs, implementando algo novo.
+
+E é bastante fácil fazer parte do time de colaboradores:
+
+Faça um for do [repositório](https://github.com/ciandt/ugla), realiza as alterações que achar necessário e submeta uma **Pull Request**. As PRs serão avaliadas e o código será testado, se estiver de acordo com os padrões aplicados ao projeto, será integrado a branch principal e uma nova versão da biblioteca será gerada.
+
+## Executando
+Após clonar o projeto, execute o comando `npm i` na raiz para instalar todas as dependencias necessárias.
+Em seguida, execute o comando `npm start` para subir o servidor e testar suas mudanas.
+
+## Garantia de código
+Fazemos uso do ESlint para garantir a consistencia do código, assim como evitar erros básicos. Então, execute o comando `npm run lint` para executar o teste de código.
+
+Este comando vai validar os arquivos **.ts**, **.scss** e **.html**.
+
+## Criando componentes
+Para criar um componente, execute o comando:
+
+```bash
+ng g c components/<nome do seu componente> --project=ugla
+```
+
+Para criar uma diretiva, execute o comando:
+```bash
+ng g directive directives/<nome da diretiva> --project=ugla
+```
+
+Para criar um serviço, execute o comando:
+```bash
+ng g service services/<nome do serviço> --project=ugla
+```
+
+## Rodando a lib localmente
+Para instalar a biblioteca em um projeo real, mas sem ter publicado no npmjs, basta dentro do ugla executar o comando abaixo:
+
+```bash
+npm run build-lib
+```
+
+O diretório `dist` será gerado com um arquivo conforme o seguinte: `ugla-x.y.z.tgz`, sendo X, Y e Z o número da versão.
+
+Em seguida, acesse o projeto que deseja usar o Ugla e no `package.json` inclua a linha abaixo nas dependencias:
+
+```bash
+"ugla": "<diretório do ugla>/dist/ugla-x.y.z.tgz"
+```
+
+Execute o `npm install` no projeto e o Ugla será instalado e poderá ser testado como se estivesse usando uma versão publicada.
+
+# Protótipo
+
+Estamos em um processo de finalização da biblioteca em Figma para o protótipo.
+
+Assim que ela for finalizada, disponibilizaremos aqui um guia completo de como contribuir para o protótipo.

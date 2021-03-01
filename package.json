@@ -32,6 +32,6 @@
     ]
   },
   "devDependencies": {
-    "immer": "^1.10.0"
+    "immer": "^8.0.1"
   }
 }

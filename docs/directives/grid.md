@@ -130,11 +130,11 @@ Este atributo cria colunas com valor customizado. Ele aceita valores com medidas
 </Tabs>
 
 ### Exibição
-![img](../../static/directives/grid-1.png)
+![img](../../static/img/directives/grid-1.png)
 `[grid]="true" [col]="4"`
 
-![img](../../static/directives/grid-2.png)
+![img](../../static/img/directives/grid-2.png)
 `[grid]="true" [col]="4" [gap]="1"`
 
-![img](../../static/directives/grid-3.png)
+![img](../../static/img/directives/grid-3.png)
 `[span]="1"`

@@ -62,4 +62,14 @@ Você pode escolher entre um dos temas que o Ugla possuí: **RED**, **YELLOW**, 
 @import '~ugla/sass/index';
 ```
 
+Dentro do `angular.json`, no nó `architect.build.options`, logo abaixo do `script: []` adicionar o trecho abaixo:
+
+```json title="path/angular.json"
+"allowedCommonJsDependencies": [
+  "lodash",
+  "rxjs-compat",
+  "rxjs"
+]
+```
+
 Com isso, seu projeto já está com Ugla e pronto para ser usado.

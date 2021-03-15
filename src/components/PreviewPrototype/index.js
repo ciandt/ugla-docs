@@ -7,7 +7,7 @@
 
 import React from 'react';
 
-export default function EmbedRender({
+export default function PreviewPrototype({
   embedUrl,
 }) {
   return (

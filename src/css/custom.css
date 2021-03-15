@@ -23,3 +23,32 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.figma-link {
+  margin: 10px 0;
+}
+
+.figma-link .link {
+  display: flex;
+  padding: 0;
+  border-radius: 30px;
+  color: #000;
+  align-items: center;
+  background-color: #f2f0f0;
+}
+
+.figma-link .link:hover {
+  text-decoration: none;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+  transition: .5s box-shadow;
+}
+
+.figma-link .link span {
+  margin-left: 8px;
+}
+
+.embed-render iframe {
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}

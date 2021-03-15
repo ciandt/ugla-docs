@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import icon from '@site/static/img/figma.png';
 
 export default function FigmaLink({
   figmaUrl,
@@ -14,7 +15,7 @@ export default function FigmaLink({
     <div className='figma-link'>
       {figmaUrl && (
         <a className="link" href={figmaUrl} target="_blank">
-          <img src="../../static/img/figma.png" className="icon"/>
+          <img src={icon} className="icon"/>
           <span className="text">Veja o protótipo no Figma</span>
         </a>
       )}

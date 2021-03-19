@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import mask from '@site/static/img/profile-mask.png';
 
 export default function TeamProfileCard({
   className,
@@ -19,6 +20,7 @@ export default function TeamProfileCard({
       <div className="card card--full-height">
         <div className="card__header">
           <div className="avatar avatar--vertical">
+            <img src={ mask } class="avatar__mask avatar__photo--xl" />
             <img
               className="avatar__photo avatar__photo--xl"
               src={githubUrl + '.png'}

@@ -11,9 +11,15 @@ module.exports = {
   themeConfig: {
     hideableSidebar: true,
     algolia: {
-      apiKey: '6ccea0b4cce72ab77203a994d3f53b4d',
+      apiKey: 'f0b9e026d50eb65923403e921f3d6b46',
       indexName: 'ugla',
-      contextualSearch: true
+      contextualSearch: true,
+      appId: 'BH4D9OD16A',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
     },
     navbar: {
       title: 'Ugla Docs',

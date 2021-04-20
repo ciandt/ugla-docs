@@ -10,6 +10,21 @@ module.exports = {
   projectName: 'ugla', // Usually your repo name.
   themeConfig: {
     hideableSidebar: true,
+    algolia: {
+      apiKey: '6ccea0b4cce72ab77203a994d3f53b4d',
+      indexName: 'ugla',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: '1440304637',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     navbar: {
       title: 'Ugla Docs',
       logo: {

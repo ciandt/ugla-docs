@@ -2,6 +2,7 @@
   "name": "ugla-docs",
   "version": "2.0.0",
   "private": false,
+  "license": "MIT",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

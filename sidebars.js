@@ -85,5 +85,9 @@ module.exports = {
         'css/typography'
       ]
     },
+    {
+      type: 'doc',
+      id: 'rules/get-started-rules'
+    }
   ]
 };
